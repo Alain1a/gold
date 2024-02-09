@@ -38,12 +38,25 @@ footer.hd{
             <a href="#"class="sd">LOGIN</a>
         <a href="#" class="sp">SIGNUP</a>                                                    
         </div>
-        <center>
+        <center class="" >
             <button><a href="{% url 'photos' %}">PHOTOS</a></button>
             <button><a href="{% url 'park' %}">PARK</a></button>
             <button><a href="{% url 'requirement' %}">REQUIREMENT</a></button>
             <button><a href="">MORE DETAILS</a></button>
-        </center>  
+        </center>
+        
+        <form action="" method="post">
+            <p>Title:</p>
+            <input type="text" name="title" id="title" placeholder="Type name">
+            <p>Author:</p>
+            <input type="text" name="author" id="author" placeholder="Author">
+            <p>content:</p>
+            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        
+        
         <footer class="hd"></footer>
 </body>
 </html>
