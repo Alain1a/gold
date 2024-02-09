@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <style>
+
+header.hd{
+            background-color:blue;
+            height: 80px;
+            width: 100%;
+            color: white;}
+footer.hd{
+    background-color: cornsilk;
+    height: 30px;
+    width: 100%;
+    color: blue;
+    padding-bottom: 300px;
+    margin-top: 300px; 
+} 
+.hd {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+         
+    </style>
+    
+</head>
+<body bgcolor="grey">
+    <center><h1>MY ANIMAL BLOG</h1></center>
+    
+     <header class="hd">JangleZoo</header>
+
+        
+            <a href="#"class="sd">LOGIN</a>
+        <a href="#" class="sp">SIGNUP</a>                                                    
+        </div>
+        <center>
+            <button><a href="{% url 'photos' %}">PHOTOS</a></button>
+            <button><a href="{% url 'park' %}">PARK</a></button>
+            <button><a href="{% url 'requirement' %}">REQUIREMENT</a></button>
+            <button><a href="">MORE DETAILS</a></button>
+        </center>  
+        <footer class="hd"></footer>
+</body>
+</html>
